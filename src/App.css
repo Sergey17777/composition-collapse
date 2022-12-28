@@ -1,0 +1,65 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", "Roboto Rouble", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgba(11, 31, 53, 0.95);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.collapse {
+  padding: 16px;
+}
+
+.collapse-content {
+  margin-bottom: 0;
+  overflow: hidden;
+  transition: height 0.2s;
+}
+
+.collapse.expanded .collapse-content {
+  margin-bottom: 16px;
+}
+
+.collapse-btn {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  color: rgba(11, 31, 53, 0.95);
+  border: none;
+  background: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  border-color: rgba(11, 31, 53, 0.3);
+  cursor: pointer;
+}
+
+.collapse-btn:hover {
+  border-color: rgba(11, 31, 53, 0.6);
+}
+
+.collapse-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: 6px;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./arrow-down.svg);
+}
+
+.collapse.expanded .collapse-icon {
+  background-image: url(./arrow-up.svg);
+}
